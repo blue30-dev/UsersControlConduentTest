@@ -32,9 +32,6 @@
     },
     methods: {
         onChangeFile(files) {
-
-            //console.log(this.filevalue)
-            //var files = e.target.files, f = files[0];
             var reader = new FileReader();
             reader.onload = function (files) {
                 var data = new Uint8Array(files.target.result);
